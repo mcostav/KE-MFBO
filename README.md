@@ -1,30 +1,26 @@
-# KE-MFBO
-Knowledge-Enhanced Multi-Fidelity Bayesian Optimisation
+# Knowledge-Enhanced Multi-Fidelity Bayesian Optimisation (KE-MFBO)
 
-We present a novel Multi-Fidelity Bayesian Optimisation framework which builds up on work from Savage et. al. [1] and applies some modifications.
-By observing the behaviour of their acquisition function in a multi-fidelity BO code, we implement some important changes which show good performance:
-1. Like in Savage et.al. [1], the final iteration is reserved to be made at the highest fidelity (z = 1), but in this case, the multistart takes the three best points at any fidelity and the best point at the highest fidelity, which in some cases shows to improve the last approximation to the global minima.
-2. It is observed that some points sampled at a fidelity between 0 and 0.2 are very close to the global optima if evaluated at the highest fidelity. So a random condition is generated so that it is 30% likely that a low-fidelity is selected to be evaluated at the highest fidelity.
-3. 
+This repository contains the implementation of a novel multi-fidelity Bayesian optimization strategy, derived from the acquisition function and algorithm developed by Savage et. al. [1].
+
+## Overview
+
+We present a novel Multi-Fidelity Bayesian Optimisation framework which effectively utilises the current dataset information and leverages cheap approximations to improve optimisation efficiency.
+By observing the behaviour of the cost-adjusted UCB acquisition function developed by Savage et.al. [1], we implement some important changes which show good performance:
+
+  1. Like in Savage et.al. [1], the final iteration is reserved to be made at the highest fidelity (z = 1), but in this case, the multistart takes the three best points at any fidelity and the best point at the highest fidelity, which in some cases shows to improve the last approximation to the global minima.
+  2. It is observed that some points sampled at a fidelity between 0 and 0.2 are very close to the global optima if evaluated at the highest fidelity. So a random condition is generated so that it is 30% likely that a low-fidelity is selected to be evaluated at the highest fidelity.
+  3. BLABLABLA
+
+# Cost-adjusted acquisition function
+$$
+\mathbf{x}_{t+1}, \mathbf{z}_{t+1} = \underset{(\mathbf{x}, \mathbf{z}) \in \mathcal{X} \times \mathcal{Z}}{\arg\max} \frac{\mu_{f_t}(\mathbf{x}, \mathbf{z}_o) + \beta^{1/2} \sigma_{f_t}(\mathbf{x}, \mathbf{z}_o)}{\gamma \mu_{\lambda_t}(\mathbf{x}, \mathbf{z}) \sqrt{1 - k((\mathbf{x}, \mathbf{z}), (\mathbf{x}, \mathbf{z}_o))^2}}.
+$$
+
 Benchmark tests are carried out on several objective functions of different dimensionalities, taken from Kandasamy et.al [2]:
 1. Currin exponential
 2. Branin
 3. Hartmann 3-D
 4. Hartmann 6-D
-
-# Multi-Fidelity Bayesian Optimization Project
-
-This repository contains the implementation of a multi-fidelity Bayesian optimization algorithm.
-
-## Overview
-
-Bayesian optimization is a powerful strategy for optimizing expensive black-box functions. Our multi-fidelity approach allows leveraging cheap approximations to improve optimization efficiency.
-
-## Graph
-
-Below is an example of the optimization progress over iterations:
-
-![Optimization Progress](https://github.com/yourusername/yourrepository/blob/main/optimization_progress.png)
 
 ## Key Equations
 
@@ -42,5 +38,5 @@ where $x$ represents the input parameters and $s$ denotes different fidelity lev
 
 References:
 [1] Tom Savage et al. “Multi-fidelity data-driven design and analysis of reactorand tube simulations”. In: Computers and Chemical Engineering 179 (Nov. 2023). ISSN: 00981354. DOI: 10.1016/j.compchemeng.2023.108410.
-[2] Kandasamy expanded paper
+[2] Kirthevasan Kandasamy et al. “Multi-fidelity Bayesian Optimisation with Con-tinuous Approximations”. In: (Mar. 2017).
 
