@@ -12,6 +12,29 @@ Benchmark tests are carried out on several objective functions of different dime
 3. Hartmann 3-D
 4. Hartmann 6-D
 
+# Multi-Fidelity Bayesian Optimization Project
+
+This repository contains the implementation of a multi-fidelity Bayesian optimization algorithm.
+
+## Overview
+
+Bayesian optimization is a powerful strategy for optimizing expensive black-box functions. Our multi-fidelity approach allows leveraging cheap approximations to improve optimization efficiency.
+
+## Graph
+
+Below is an example of the optimization progress over iterations:
+
+![Optimization Progress](https://github.com/yourusername/yourrepository/blob/main/optimization_progress.png)
+
+## Key Equations
+
+The multi-fidelity Bayesian optimization can be formulated as:
+
+$$
+\text{minimize} \; f(x) = \mathbb{E}[f(x, s)] \quad \text{subject to} \; x \in \mathcal{X}, s \in \mathcal{S}
+$$
+
+where $x$ represents the input parameters and $s$ denotes different fidelity levels.
 
 
 
