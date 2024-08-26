@@ -11,7 +11,7 @@ By observing the behaviour of the cost-adjusted UCB acquisition function develop
   2. It is observed that some points sampled at a fidelity between 0 and 0.2 are very close to the global optima if evaluated at the highest fidelity. So a random condition is generated so that it is 30% likely that a low-fidelity is selected to be evaluated at the highest fidelity.
   3. BLABLABLA
 
-# Cost-adjusted acquisition function and greedy acquisition function
+## Cost-adjusted acquisition function and greedy acquisition function
 ![image](https://github.com/user-attachments/assets/9982fde7-953b-4310-80d9-e7d81acc0ee9)
 ![image](https://github.com/user-attachments/assets/1826992d-11e5-4555-8687-a1a288e3c86a)
 
@@ -22,21 +22,11 @@ Benchmark tests are carried out on several objective functions of different dime
 3. Hartmann 3-D
 4. Hartmann 6-D
 
-## Key Equations
-
-The multi-fidelity Bayesian optimization can be formulated as:
-
-$$
-\text{minimize} \; f(x) = \mathbb{E}[f(x, s)] \quad \text{subject to} \; x \in \mathcal{X}, s \in \mathcal{S}
-$$
-
-where $x$ represents the input parameters and $s$ denotes different fidelity levels.
 
 
 
 
-
-References:
+# References:
 [1] Tom Savage et al. “Multi-fidelity data-driven design and analysis of reactorand tube simulations”. In: Computers and Chemical Engineering 179 (Nov. 2023). ISSN: 00981354. DOI: 10.1016/j.compchemeng.2023.108410.
 [2] Kirthevasan Kandasamy et al. “Multi-fidelity Bayesian Optimisation with Con-tinuous Approximations”. In: (Mar. 2017).
 
