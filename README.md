@@ -12,9 +12,8 @@ By observing the behaviour of the cost-adjusted UCB acquisition function develop
   3. BLABLABLA
 
 # Cost-adjusted acquisition function
-$$
-\mathbf{x}_{t+1}, \mathbf{z}_{t+1} = \underset{(\mathbf{x}, \mathbf{z}) \in \mathcal{X} \times \mathcal{Z}}{\arg\max} \frac{\mu_{f_t}(\mathbf{x}, \mathbf{z}_o) + \beta^{1/2} \sigma_{f_t}(\mathbf{x}, \mathbf{z}_o)}{\gamma \mu_{\lambda_t}(\mathbf{x}, \mathbf{z}) \sqrt{1 - k((\mathbf{x}, \mathbf{z}), (\mathbf{x}, \mathbf{z}_o))^2}}.
-$$
+![image](https://github.com/user-attachments/assets/9982fde7-953b-4310-80d9-e7d81acc0ee9)
+
 
 Benchmark tests are carried out on several objective functions of different dimensionalities, taken from Kandasamy et.al [2]:
 1. Currin exponential
