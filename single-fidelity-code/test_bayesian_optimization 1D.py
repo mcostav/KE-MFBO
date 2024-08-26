@@ -50,7 +50,7 @@ multi_opt = 25
 EI_bool = False # True = EI, False = UCB
 store_data = True # True = gif, False = Plot last iteration
 noise = None   # either give a value (0.05) or state None
-seed = 42 # seed of random number generator
+seed = 200 # seed of random number generator
 SaveData = True # save in dictionary or not
 function = "Rastrigin_f" # "Rastrigin_f" or "Ackley_f"
 
