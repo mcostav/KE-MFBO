@@ -28,5 +28,6 @@ Benchmark tests are carried out on several objective functions of different dime
 
 # References:
 [1] Tom Savage et al. “Multi-fidelity data-driven design and analysis of reactorand tube simulations”. In: Computers and Chemical Engineering 179 (Nov. 2023). ISSN: 00981354. DOI: 10.1016/j.compchemeng.2023.108410.
+
 [2] Kirthevasan Kandasamy et al. “Multi-fidelity Bayesian Optimisation with Con-tinuous Approximations”. In: (Mar. 2017).
 
