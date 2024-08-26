@@ -1,0 +1,2 @@
+Simulation Description: currin branin combo 30% then see if lower than 0.3 and change to highest fidelity, otherwise if higher than 0.85, give highest fidelity
+Timestamp: 20240826_172330
