@@ -1,0 +1,2 @@
+Simulation Description: Hartmann simulation budget 160, 30% and 0.9 threshold noiseless
+Timestamp: 20240826_140714
