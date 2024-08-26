@@ -1,0 +1,2 @@
+Simulation Description: Simulation with greedy abs, threshold 0.9, no abs in Savage acquisition and four best points in last iteration
+Timestamp: 20240825_120345
