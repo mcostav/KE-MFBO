@@ -1,0 +1,2 @@
+Simulation Description: Currin and Branin at budget 80, selector 30%, 0.9 threshold and noiseless
+Timestamp: 20240826_121130
