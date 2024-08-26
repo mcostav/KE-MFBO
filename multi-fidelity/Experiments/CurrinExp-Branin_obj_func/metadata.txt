@@ -1,0 +1,3 @@
+Simulation Description: First simulation, novel implementation with xbest of any fidelity. Careful cuz lb is 0.1 but I can change it to 0 in graphs and that should be fine to show!!
+Note, graphs are in GitHub under Results_iteration 1
+Timestamp: 20240824_150119
