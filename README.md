@@ -11,8 +11,9 @@ By observing the behaviour of the cost-adjusted UCB acquisition function develop
   2. It is observed that some points sampled at a fidelity between 0 and 0.2 are very close to the global optima if evaluated at the highest fidelity. So a random condition is generated so that it is 30% likely that a low-fidelity is selected to be evaluated at the highest fidelity.
   3. BLABLABLA
 
-# Cost-adjusted acquisition function
+# Cost-adjusted acquisition function and greedy acquisition function
 ![image](https://github.com/user-attachments/assets/9982fde7-953b-4310-80d9-e7d81acc0ee9)
+![image](https://github.com/user-attachments/assets/1826992d-11e5-4555-8687-a1a288e3c86a)
 
 
 Benchmark tests are carried out on several objective functions of different dimensionalities, taken from Kandasamy et.al [2]:
