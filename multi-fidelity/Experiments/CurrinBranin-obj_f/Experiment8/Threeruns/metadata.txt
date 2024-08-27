@@ -1,0 +1,2 @@
+Simulation Description: Three run Currin Branin with combo 20% 0.25 and 80% 0.9
+Timestamp: 20240827_100203
