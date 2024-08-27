@@ -1,2 +1,0 @@
-Simulation Description: CurrinBranin last simulation 20% for lower than 0.25 and 80% for higher than 0.9
-Timestamp: 20240826_190525
