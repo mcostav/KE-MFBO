@@ -1,4 +1,4 @@
-# Knowledge-Enhanced Multi-Fidelity Bayesian Optimisation (KE-MFBO)
+# Trajectory Informed Multi-fidelity Bayesian Optimisation with Increased High-Fidelity Sampling (TIMBO-IHFS)
 
 This repository contains the implementation of a novel multi-fidelity Bayesian optimization strategy, derived from the acquisition function and algorithm developed by Savage et. al. [1].
 
