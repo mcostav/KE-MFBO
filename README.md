@@ -8,7 +8,7 @@ We present a novel Multi-Fidelity Bayesian Optimisation framework which effectiv
 By observing the behaviour of the cost-adjusted UCB acquisition function developed by Savage et.al. [1], we implement some important changes which show good performance:
 
   1. Like in Savage et.al. [1], the final iteration is reserved to be made at the highest fidelity (z = 1), but in this case, the multistart takes the three best points at any fidelity and the best point at the highest fidelity, which in some cases shows to improve the last approximation to the global minima.
-  2. It is observed that some points sampled at a fidelity between 0 and 0.2 are very close to the global optima if evaluated at the highest fidelity. So a random condition is generated so that it is 30% likely that a low-fidelity is selected to be evaluated at the highest fidelity.
+  2. It is observed that some points sampled at a fidelity between (0 and 0.2) and others between (0.8 and 1) are very close to the global optima if evaluated at the highest fidelity. So a random condition is generated so that it is 20% likely that a low-fidelity is selected to be evaluated at the highest fidelity and 80% likely that a high fidelity is evaluated at the highest fidelity.
 
 ## Cost-adjusted acquisition function and greedy acquisition function
 ![image](https://github.com/user-attachments/assets/9982fde7-953b-4310-80d9-e7d81acc0ee9)
