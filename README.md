@@ -21,6 +21,28 @@ Benchmark tests are carried out on several objective functions of different dime
 3. Hartmann 3-D
 4. Hartmann 6-D
 
+Three cost functions:
+1. (1 + z)
+2. (1 + 5z)
+3. (1 + 5z)**2
+
+## Results (Trajectory plots)
+The order of the images being:
+1. Currin exponential for cost_function 1 and 2
+2. Branin for cost function 1 and 2
+![objective_function_1_cost_function_1_combined_plot](https://github.com/user-attachments/assets/47599cc5-c3e2-452e-a136-42d2b32c14b9)![objective_function_1_cost_function_2_combined_plot](https://github.com/user-attachments/assets/0e26984f-1be9-4c6c-a31b-2539535efcec)!![objective_function_2_cost_function_2_combined_plot](https://github.com/user-attachments/assets/ed61d2b1-5e64-4118-8400-cd8d3f08eb11)
+[objective_function_2_cost_function_1_combined_plot](https://github.com/user-attachments/assets/9960480e-d51b-4f69-ab13-c65542eeff97)
+
+## Results (Convergence plots)
+The order of the images being:
+1. Currin exponential for cost_function 1 and 2
+2. Branin for cost function 1 and 2
+
+
+![objective_function_1_cost_function_1_log_regret_all_fidelities](https://github.com/user-attachments/assets/c7ba1e77-2575-46dd-b8b9-43568cf75972)!![objective_function_2_cost_function_2_log_regret_all_fidelities](https://github.com/user-attachments/assets/213af2f6-f469-4920-b783-6a2e3faf8d4a)
+[objective_function_1_cost_function_2_log_regret_all_fidelities](https://github.com/user-attachments/assets/09f513db-7f00-4812-839f-a1758eea6993)![objective_function_2_cost_function_1_log_regret_all_fidelities](https://github.com/user-attachments/assets/27146092-88d0-4d6a-80b0-6b77ca4b9e28)
+
+
 
 
 
